@@ -1,1 +1,1 @@
-# mcMillan-poster-microsite
+# mcmillan-poster-microsite

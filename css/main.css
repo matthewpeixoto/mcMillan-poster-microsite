@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "CalibreWeb";
+  src: url("../fonts/CalibreWeb-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "CalibreWeb-Medium";
+  src: url("../fonts/CalibreWeb-Medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: "CalibreWeb-Bold";
+  src: url("../fonts/CalibreWeb-Bold.woff") format('woff');
+}
+
+html {
+  min-width: 320px;
+
+  background-color: #000;
+
+  color: #fff;
+  font-family: CalibreWeb;
+}
+
+h1 {
+  font-family: CalibreWeb-Bold;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  line-height: 0.8181818182;
+}
+
+.tenamega {
+  line-height: .8;
+}
+
+.text-stroke {
+  color: var(--color-brand);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-brand);
+}
+
+.sup {
+  text-decoration: underline;
+  font-size: 53%;
+  position: relative;
+  bottom: 0.55em;
+}
+
+.wrapper {
+  max-width: 1200px;
+}
