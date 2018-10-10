@@ -19,18 +19,17 @@ html {
   background-color: #000;
 
   color: #fff;
-  font-family: CalibreWeb;
+  font-family: CalibreWeb-Medium;
 }
 
 h1 {
   font-family: CalibreWeb-Bold;
   text-transform: uppercase;
   color: var(--color-brand);
-  line-height: 0.8181818182;
 }
 
 .tenamega {
-  line-height: .8;
+  line-height: .82;
 }
 
 .text-stroke {
@@ -48,5 +47,55 @@ h1 {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 68em;
+}
+
+.gord-head {
+  max-width: 25em;;
+}
+
+.embed-11by17 {
+  padding-top: 154.55%
+}
+
+.photo-bg {
+  background-color: #121212;
+}
+
+.photo-grid {
+  max-width: 32em;
+}
+
+.intro {
+  border-top: 3px solid #fff;
+}
+
+.intro-border {
+  height: 3px;
+  background-color: #fff;
+  width: 40%;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .photo-grid {
+    max-width: 52em;
+  }
+
+  .poster-unit:nth-child(odd) {
+    margin-top: -11.35rem;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .photo-grid {
+    max-width: 55em;
+  }
+
+  .poster-unit:nth-child(odd) {
+    margin-top: -12.2rem;
+  }
+
 }

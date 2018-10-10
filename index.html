@@ -2,8 +2,47 @@
 layout: default
 ---
 
-<div class="text-center pad-t-8">
-  <h1 class="tenamega">
-    M<span class="sup">c</span>Millan<br><span class="text-stroke">poster<br>archive</span>
-  </h1>
+<div class="text-center pad-t-4 gutter push-4">
+  <div class="relative">
+    <h1 class="tenamega push-0 pin-c">
+      M<span class="sup">c</span>Millan<br><span class="text-stroke">poster<br>archive</span>
+    </h1>
+    <img class="img-flex center-block gord-head" src="{{site.baseurl}}/images/gord-head.jpg" alt="Gord head" />
+  </div>
+</div>
+
+<div class="photo-grid wrapper gutter l-gutter-0">
+  <div class="grid push-2">
+    <div class="m-gutter l-gutter-2 giga unit s-1 m-1-2 unit-offset-m-1-2">
+      <div class="intro-border"></div>
+      <p class="pad-t-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    {% 
+      include poster.html
+      name="Jason Redmond"
+      title="Digital Operations Manager"
+    %}
+
+    {% 
+      include poster.html
+      name="Matthew Peixoto"
+      title="Interaction Designer"
+    %}
+
+    {% 
+      include poster.html
+      name="JP Brown"
+      title="Interaction Designer"
+    %}
+
+    {% 
+      include poster.html
+      name="JP Brown"
+      title="Interaction Designer"
+    %}
+  </div>
+
 </div>

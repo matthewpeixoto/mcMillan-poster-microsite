@@ -1,10 +1,4 @@
-/*
- * Modulifier || Code released under the UNLICENSE
- * Code under other copyrights & licenses listed below.
- * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;positioning;accessibility
- */
-
- @-moz-viewport { width: device-width; scale: 1; }
+@-moz-viewport { width: device-width; scale: 1; }
  @-ms-viewport { width: device-width; scale: 1; }
  @-o-viewport { width: device-width; scale: 1; }
  @-webkit-viewport { width: device-width; scale: 1; }
