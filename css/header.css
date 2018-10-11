@@ -17,75 +17,9 @@
 
   color: #fff;
 
-  transition: color 150ms ease, opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
-.logo:hover,
-.hamburger:hover {
-  opacity: .5;
-}
-
-.js-logo-active {
-  color: #fff!important;
-}
-
-.menu-container {
-  height: 100vh;
-  min-width: 320px;
-
-  background-color: var(--color-brand);
-  display: none;
-}
-
-.menu-item {
-  opacity: 0;
-  transform: scale(1.1) translateY(-24px);
-
-  transition: opacity 350ms ease-out, transform 350ms ease-out, -webkit-transform 350ms ease-out;
-}
-
-.nav-item:nth-child(1) {
-  transition-delay: 50ms, 50ms;
-}
-
-.nav-item:nth-child(2) {
-  transition-delay: 100ms, 100ms;
-}
-
-.nav-item:nth-child(3) {
-  transition-delay: 150ms, 150ms;
-}
-
-.nav-item:nth-child(4) {
-  transition-delay: 200ms, 200ms;
-}
-
-.nav-item:nth-child(5) {
-  transition-delay: 300ms, 300ms;
-}
-
-.nav-item:nth-child(6) {
-  transition-delay: 350ms, 350ms;
-}
-
-.nav-item:nth-child(7) {
-  transition-delay: 400ms, 400ms;
-}
-
-.nav-item:nth-child(8) {
-  transition-delay: 450ms, 450ms;
-}
-
-.nav-item:nth-child(9) {
-  transition-delay: 500ms, 500ms;
-}
-
-
-.js-menu-item-active {
-  opacity: 1;
-  transform: none;
-}
-
-.menu-link {
-  color: #fff;
+.logo:hover {
+  opacity: .65;
 }
