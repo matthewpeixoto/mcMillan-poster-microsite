@@ -51,11 +51,11 @@ h1 {
 }
 
 .gord-head {
-  max-width: 25em;;
+  max-width: 25em;
 }
 
 .embed-11by17 {
-  padding-top: 154.55%
+  padding-top: 154.55%;
 }
 
 .photo-bg {
@@ -80,13 +80,23 @@ h1 {
   max-width: 14em;
 }
 
-.poster:hover {
-  background-color: #141414;
+.poster {
+  transition: transform .2s ease-out;
+}
+
+.poster-figure {
+  cursor: pointer;
+}
+
+.poster-figure:hover .poster {
+  /* background-color: #141414; */
+  transform: scale(.97);
+  background-color: #121212;
 }
 
 .js-animate {
   transform: translateY(20%);
-  transition: all 1s ease;
+  transition: transform 1s ease;
 }
 
 .js-animated {

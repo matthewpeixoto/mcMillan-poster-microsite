@@ -1,10 +1,10 @@
-var $poster = $('.poster')
+var $posterBtn = $('.poster-btn')
 var $btnCloseModal = $('.btn-close-modal');
 var $html = $('html');
 var $body = $('body');
 var $modal = $('.modal');
 
-$poster.click(function () {
+$posterBtn.click(function () {
   var offset = $(document).scrollTop();
   var viewportHeight = $(window).height();
   $modal.css('top', (offset  + (viewportHeight/2)) - ($modal.outerHeight()/2));
