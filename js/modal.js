@@ -18,7 +18,7 @@ $poster.click(function () {
 $btnCloseModal.click(function () {
   $modal.hide();
   $html.add($body).css({
-    overflow: 'visable',
-    position: 'static'
+    overflow: '',
+    position: ''
   });
 })
