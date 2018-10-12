@@ -3,6 +3,7 @@ var $btnCloseModal = $('.btn-close-modal');
 var $html = $('html');
 var $body = $('body');
 var $modal = $('.modal');
+const targetElement = document.querySelector('.modal');
 
 $poster.click(function () {
   var offset = $(document).scrollTop();
@@ -13,6 +14,7 @@ $poster.click(function () {
     overflow: 'hidden',
     position: 'relative'
   });
+  bodyScrollLock.disableBodyScroll(targetElement);
 });
 
 $btnCloseModal.click(function () {
@@ -21,4 +23,5 @@ $btnCloseModal.click(function () {
     overflow: '',
     position: ''
   });
+  bodyScrollLock.enableBodyScroll(targetElement);
 })
