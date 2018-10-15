@@ -1,8 +1,8 @@
 ---
-name: JP Brown
+name: Matthew Peixoto
 title: Interaction Designers
 
-date: 2017-11-15
+date: 2018-04-15
 
 twitter_link: https://www.twitter.com
 linkedin_link: https://www.linkedin.com
