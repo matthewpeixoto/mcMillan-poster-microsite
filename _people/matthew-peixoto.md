@@ -1,6 +1,6 @@
 ---
 name: Matthew Peixoto
-title: Interaction Designers
+title: Interaction Designer
 
 date: 2018-04-15
 

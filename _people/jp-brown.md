@@ -1,6 +1,6 @@
 ---
 name: JP Brown
-title: Interaction Designers
+title: Interaction Designer
 
 date: 2017-11-15
 
