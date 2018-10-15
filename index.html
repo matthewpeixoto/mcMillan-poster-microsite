@@ -22,28 +22,20 @@ layout: default
   </div>
 
   <ol class="grid list-group push-0">
-    {% 
-      include poster.html
-      name="Jason Redmond"
-      title="Digital Operations Manager"
-    %}
-
-    {% 
-      include poster.html
-      name="Matthew Peixoto"
-      title="Interaction Designer"
-    %}
-
-    {% 
-      include poster.html
-      name="JP Brown"
-      title="Interaction Designer"
-    %}
-
-    {% 
-      include poster.html
-      name="JP Brown"
-      title="Interaction Designer"
-    %}
+    {% for person in site.people %}
+      <li class="poster-unit unit s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8 js-animate">
+        <figure class="push-0 poster-figure">
+          <button class="poster-btn btn-link text-left">
+            <div class="poster island-2 photo-bg push">
+              <img class="img-flex" src="{ {site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
+            </div>
+            <figcaption class="mega">
+              <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
+              <p class="push-0">{{ person.title }}</p>
+            </figcaption>
+          </button>
+        </figure>
+      </li>
+    {% endfor %}
   </ol>
 </section>
