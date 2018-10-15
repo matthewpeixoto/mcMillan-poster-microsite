@@ -1,2 +1,7 @@
 permalink: pretty
-baseurl: "/mcm-poster-archive"
+baseurl: ""
+
+collections:
+  people:
+    output: true
+    permalink: /people/:path/

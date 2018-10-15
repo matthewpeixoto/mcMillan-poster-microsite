@@ -1,19 +1,19 @@
-<div class="modal">
+<div class="modal hide">
   <div class="modal-content wrapper pad-t-4 push-4 gutter">
     <div class="grid">
       <div class="unit s-1 m-1-2 push-2 m-push-0">
-        <img class="img-flex" src="{{site.baseurl}}/images/posters/matthew-peixoto.jpg" alt="{{include.name}}'s poster" />
+        <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{include.name}}'s poster" />
       </button>
       </div>
       <div class="unit s-1 m-1-2 relative">
         <div class="modal-details">
-          <h2 class="push-0 not-bold exa">Matthew Peixoto</h2>
-          <p class="tera color-neutral push-2">Interaction Designer</p>
+          <h2 class="push-0 not-bold exa">{{ person.name }}</h2>
+          <p class="tera color-neutral push-2">{{ person.title }}</p>
           <h3 class="mega social-header push-1-2">Find him on</h3>
           <ul class="mega push-0">
-            <li class="push-1-2"><a class="btn btn-link" href="#">Twitter</a></li>
-            <li class="push-1-2"><a class="btn btn-link" href="#">LinkedIn</a></li>
-            <li><a class="btn btn-link" href="#">Instagram</a></li>
+            <li class="push-1-2"><a class="btn btn-link" href="{{ person.twitter }}">Twitter</a></li>
+            <li class="push-1-2"><a class="btn btn-link" href="{{ person.linkedin }}">LinkedIn</a></li>
+            <li><a class="btn btn-link" href="{{ person.instagram }}">Instagram</a></li>
           </ul>
         </div>
       </div>
