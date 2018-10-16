@@ -1,0 +1,38 @@
+<header class="header absolute w-1" role="banner">
+  <div class="wrapper island">
+    <div class="grid grid-middle grid-header zindex-1000 relative">
+      <div class="unit s-1-2">
+        <a class="icon logo" href="/">
+          <span class="ib logo btn-focus" tabindex="-1">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#mcmillan" /></svg>
+          </span>
+        </a>
+      </div>
+      <div class="unit s-1-2 text-right">
+        <button class="hamburger hamburger-slider icon i-24" type="button" id="toggle-menu" tabindex="0">
+          <span class="icon i-24 btn-focus" tabindex="-1">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-container pin-tl pin-br zindex-1">
+      <div class="wrapper gutter">
+        <nav class="nav pad-t-4" id="navigation">
+          <ul class="list-group text-right giga bold">
+            {% include nav-li.html title="Fun &amp; Culture" href="" %}
+            {% include nav-li.html title="How We Do What We Do" href="" %}
+            {% include nav-li.html title="Human Resources" href="" %}
+            {% include nav-li.html title="Employee Resources" href="employee-resources" %}
+            {% include nav-li.html title="People &amp; The Organization" href="" %}
+            {% include nav-li.html title="At the Office" href="" %}
+            {% include nav-li.html title="About McMillan" href="" %}
+            {% include nav-li.html title="Contact" href="" %}
+            {% include nav-li.html title="Legal" href="" %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

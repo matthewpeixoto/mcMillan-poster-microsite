@@ -1,10 +1,11 @@
 ---
 name: Jason Redmond
 title: Digital Operations Manager
+gender: male
 
 date: 2017-12-15
 
-twitter_link: https://www.twitter.com
-linkedin_link: https://www.linkedin.com
-instagram_link: https://www.instagram
+twitter: https://www.twitter.com
+linkedin: https://www.linkedin.com
+instagram: https://www.instagram
 ---

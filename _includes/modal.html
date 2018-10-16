@@ -9,11 +9,17 @@
         <div class="modal-details">
           <h2 class="push-0 not-bold exa">{{ person.name }}</h2>
           <p class="tera color-neutral push-2">{{ person.title }}</p>
-          <h3 class="mega social-header push-1-2">Find him on</h3>
+          <h3 class="mega social-header push-1-2">Find {% if person.gender == "male" %}him{% endif %}{% if person.gender == "female" %}her{% endif %} on</h3>
           <ul class="mega push-0">
-            <li class="push-1-2"><a class="btn btn-link" href="{{ person.twitter }}">Twitter</a></li>
-            <li class="push-1-2"><a class="btn btn-link" href="{{ person.linkedin }}">LinkedIn</a></li>
-            <li><a class="btn btn-link" href="{{ person.instagram }}">Instagram</a></li>
+            {% if person.twitter %}
+              <li class="push-1-2"><a class="btn btn-link" href="{{ person.twitter }}">Twitter</a></li>
+            {% endif %}
+            {% if person.linkedin %}
+              <li class="push-1-2"><a class="btn btn-link" href="{{ person.linkedin }}">LinkedIn</a></li>
+            {% endif %}
+            {% if person.instagram %}
+              <li><a class="btn btn-link" href="{{ person.instagram }}">Instagram</a></li>
+            {% endif %}
           </ul>
         </div>
       </div>

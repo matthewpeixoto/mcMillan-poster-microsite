@@ -1,10 +1,11 @@
 ---
 name: Matthew Peixoto
 title: Interaction Designer
+gender: male
 
 date: 2018-04-15
 
-twitter_link: https://www.twitter.com
-linkedin_link: https://www.linkedin.com
-instagram_link: https://www.instagram
+twitter: https://www.twitter.com
+linkedin: https://www.linkedin.com
+instagram: https://www.instagram
 ---
