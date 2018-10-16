@@ -8,6 +8,7 @@
 
 .hamburger:hover {
   opacity: 0.5;
+  background-color: transparent;
 }
 
 .hamburger-inner {
@@ -15,9 +16,9 @@
   top: 50%;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner, .hamburger-inner::after {
   width: 24px;
-  height: 4px;
+  height: 2px;
   background-color: #fff;
   position: absolute;
   transition: transform 150ms ease;
@@ -37,7 +38,7 @@
 }
 
 .hamburger-slider .hamburger-inner {
-  top: 0;
+  top: 5px;
 }
 
 .hamburger-slider .hamburger-inner::before {
@@ -48,22 +49,16 @@
 }
 
 .hamburger-slider .hamburger-inner::after {
-  top: 20px;
+  top: 10px;
 }
 
 .hamburger-slider.is-active .hamburger-inner {
-  transform: translateY(10px) rotate(45deg);
-  background-color: #fff;
-}
-
-.hamburger-slider.is-active .hamburger-inner::before {
-  transform: rotate(-45deg) translate(-10px, -7px);
-  opacity: 0;
+  transform: translateY(10px) translateY(-5px) rotate(45deg);
   background-color: #fff;
 }
 
 .hamburger-slider.is-active .hamburger-inner::after {
-  transform: translateY(-20px) rotate(-90deg);
+  transform: translateY(-10px) rotate(-90deg);
   background-color: #fff;
 }
 

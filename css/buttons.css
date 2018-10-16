@@ -1,0 +1,84 @@
+.link-box {
+  display: block;
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  overflow: visible;
+  padding: .375em .75em .42em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #333;
+  border-radius: 4px;
+  border: 3px solid #333;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  text-transform: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+.btn-link {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  color: inherit;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Focus and Active */
+
+a:focus,
+[tabindex="0"]:focus,
+[tabindex="-1"]:focus,
+button:focus,
+.btn-focus:focus
+.btn-focus-nav:focus,
+a:active,
+[tabindex="0"]:active,
+[tabindex="-1"]:active,
+button:active,
+.btn-focus:active
+.btn-focus-nav:active {
+  outline: none;
+}
+
+.btn-focus {
+  display: inline-block;
+}
+
+a:focus > .btn-focus,
+button:focus > .btn-focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 1px;
+}
+
+.outline-inset:focus {
+  outline-offset: -8px;
+}
