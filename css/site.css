@@ -11,3 +11,4 @@
 {% include_relative modal.css %}
 {% include_relative hamburger.css %}
 {% include_relative buttons.css %}
+{% include_relative animation.css %}

@@ -4,7 +4,7 @@ var $body = $('.body');
 $(document).ready(function(){
 
   $toggleMenu.click(function () {
-    $('.menu-container').slideToggle(550);
+    $('.menu-container').slideToggle(400);
     $('.menu-item').toggleClass('js-menu-item-active');
     $('.hamburger').toggleClass('is-active');
     $('.logo').toggleClass('js-logo-active');

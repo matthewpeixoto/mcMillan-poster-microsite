@@ -1,0 +1,10 @@
+.thats-all-folks {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: scale(.8);
+}
+
+.js-thats-all-folks-animated {
+  opacity: 1;
+  transform: scale(1);
+}
