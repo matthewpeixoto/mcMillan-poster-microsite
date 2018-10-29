@@ -12,13 +12,13 @@
           <h3 class="mega social-header push-1-2">Find {% if person.gender == "male" %}him{% endif %}{% if person.gender == "female" %}her{% endif %} on</h3>
           <ul class="mega push-0">
             {% if person.twitter %}
-              <li class="push-1-2"><a class="btn btn-link" href="{{ person.twitter }}">Twitter</a></li>
+              <li class="push-1-2 social-link"><a class="btn btn-link" href="{{ person.twitter }}">Twitter</a></li>
             {% endif %}
             {% if person.linkedin %}
-              <li class="push-1-2"><a class="btn btn-link" href="{{ person.linkedin }}">LinkedIn</a></li>
+              <li class="push-1-2 social-link"><a class="btn btn-link" href="{{ person.linkedin }}">LinkedIn</a></li>
             {% endif %}
             {% if person.instagram %}
-              <li><a class="btn btn-link" href="{{ person.instagram }}">Instagram</a></li>
+              <li class="social-link"><a class="btn btn-link" href="{{ person.instagram }}">Instagram</a></li>
             {% endif %}
           </ul>
         </div>
