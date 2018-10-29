@@ -52,3 +52,22 @@
 .menu-link {
   color: #fff;
 }
+
+.loader {
+  height: 4px;
+  width: 150%;
+  background-color: red;
+  animation: load 3s ease-in-out forwards;
+}
+
+@keyframes load {
+
+  0% {
+    transform: translateX(-125%);
+  }
+
+  100% {
+    transform: translateX(125%);
+  }
+
+}

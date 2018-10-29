@@ -8,3 +8,34 @@
   opacity: 1;
   transform: scale(1);
 }
+
+.text-emerge {
+  animation: emerge 2s ease forwards;
+  transform: translateY(400px);
+
+  font-weight: 900;
+}
+
+.text-emerge-1 {
+  animation-delay: .25s;
+}
+
+.text-emerge-2 {
+  animation-delay: .5s;
+}
+
+.text-emerge-3 {
+  animation-delay: .75s;
+}
+
+@keyframes emerge {
+
+  0% {
+    transform: translateY(300px);
+  }
+
+  100% {
+   transform: none;
+  }
+
+}

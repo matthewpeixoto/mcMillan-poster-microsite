@@ -6,6 +6,6 @@ gender: male
 date: 2018-10-15
 
 twitter: 
-linkedin:
-instagram: https://www.instagram
+linkedin: https://ca.linkedin.com/in/cameron-stewart-design
+instagram:
 ---
