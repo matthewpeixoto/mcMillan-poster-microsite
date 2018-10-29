@@ -55,9 +55,9 @@
 
 .loader {
   height: 4px;
-  width: 150%;
+  width: 175%;
   background-color: red;
-  animation: load 3s ease-in-out forwards;
+  animation: load 3s cubic-bezier(.63,.01,.66,1.01) forwards;
 }
 
 @keyframes load {
