@@ -9,7 +9,9 @@ $(document).ready(function(){
     $('.hamburger').toggleClass('is-active');
     $('.logo').toggleClass('js-logo-active');
     $html.toggleClass('overflow-hidden');
+    $html.toggleClass('relative');
     $body.toggleClass('overflow-hidden');
+    $body.toggleClass('relative');
   });
 
 });
