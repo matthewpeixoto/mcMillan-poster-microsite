@@ -13,6 +13,5 @@ $(document).ready(function(){
     $body.toggleClass('overflow-hidden');
     $body.toggleClass('relative');
   });
-
 });
 

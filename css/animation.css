@@ -54,3 +54,13 @@
   }
 
 }
+
+.scroll-text {
+  color: #fff;
+  opacity: .1;
+  position: fixed;
+  transform: translateX(10px);
+  top: 50%;
+  z-index: -1000;;
+  font-family: CalibreWeb-Bold;
+}
