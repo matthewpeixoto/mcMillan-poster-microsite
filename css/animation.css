@@ -56,11 +56,12 @@
 }
 
 .scroll-text {
-  color: #fff;
-  opacity: .1;
   position: fixed;
-  transform: translateX(10px);
   top: 50%;
   z-index: -1000;;
+  width: 100000px;
+  margin-left: 125%;
+  
+  color: #1a1a1a;
   font-family: CalibreWeb-Bold;
 }
