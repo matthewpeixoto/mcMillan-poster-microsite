@@ -5,7 +5,6 @@ gender: male
 
 date: 2018-04-15
 
-twitter: https://www.twitter.com
-linkedin: https://www.linkedin.com
-instagram: https://www.instagram
+linkedin: https://ca.linkedin.com/in/matthew-peixoto-a84906122
+instagram: https://www.instagram.com/matthew.peixoto/
 ---

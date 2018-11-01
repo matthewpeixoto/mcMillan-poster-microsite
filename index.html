@@ -2,12 +2,20 @@
 layout: default
 ---
 
+<div class="scroll-text tenamega">Lorem ipsum dolor sit.</div>
+
 <div class="text-center pad-t-4 gutter push-4">
   <div class="relative">
-    <h1 class="tenamega push-0 pin-c">
-      <div>M<span class="sup">c</span>Millan</div>
-      <div class="text-stroke">poster</div>
-      <div class="text-stroke">archive</div>
+    <h1 class="nina push-0 pin-c">
+      <div class="overflow-hidden">
+        <div class="text-emerge text-emerge-1">M<span class="sup">c</span>Millan</div>
+      </div>
+      <div class="overflow-hidden">
+        <div class="text-emerge text-emerge-2 text-stroke">poster</div>
+      </div>
+      <div class="overflow-hidden">
+        <div class="text-emerge text-emerge-3 text-stroke">archive</div>
+      </div>
     </h1>
     <img class="img-flex center-block gord-head" src="{{site.baseurl}}/images/gord-head.jpg" alt="Gord head" />
   </div>
@@ -20,7 +28,7 @@ layout: default
       <p class="pad-t-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
   </div>
-
+  
   <ol class="grid list-group push-0">
     {% assign people = site.people | reverse %}
     {% for person in people %}

@@ -15,6 +15,7 @@
 
 html {
   min-width: 320px;
+  overflow-x: hidden;
 
   background-color: #000;
 
@@ -23,20 +24,21 @@ html {
 }
 
 h1 {
+  color: var(--color-brand);
   font-family: CalibreWeb-Bold;
   text-transform: uppercase;
-  color: var(--color-brand);
+  line-height: .82;
 }
 
-.tenamega {
+.nina {
   line-height: .82;
 }
 
 .text-stroke {
   color: var(--color-brand);
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--color-brand);
+  -webkit-text-stroke: 1px var(--color-brand);
+  text-stroke: 1px var(--color-brand);
 }
 
 .sup {
@@ -88,7 +90,7 @@ h1 {
   cursor: pointer;
 }
 
-.poster-figure:hover .poster {
+.poster-btn:hover .poster {
   /* background-color: #141414; */
   transform: scale(.97);
   background-color: #121212;
@@ -126,7 +128,7 @@ h1 {
   }
 
   .poster-unit:nth-child(odd) {
-    margin-top: -12.2rem;
+    margin-top: -12.9rem;
   }
 
 }

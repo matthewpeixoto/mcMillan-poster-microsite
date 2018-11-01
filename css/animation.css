@@ -8,3 +8,60 @@
   opacity: 1;
   transform: scale(1);
 }
+
+.text-emerge {
+  animation: emerge 2s ease forwards;
+  transform: translateY(300px);
+}
+
+.text-emerge-1 {
+  animation-delay: 1.5s;
+}
+
+.text-emerge-2 {
+  animation-delay: 1.75s;
+}
+
+.text-emerge-3 {
+  animation-delay: 2s;
+}
+
+@keyframes emerge {
+
+  0% {
+    transform: translateY(300px);
+  }
+
+  100% {
+   transform: none;
+  }
+
+}
+
+.head-emerge {
+  animation: head-emerge 1.5s ease-out forwards;
+  transform: translateY(3rem);
+}
+
+@keyframes head-emerge {
+
+  0% {
+    transform: translateY(3rem);
+  }
+
+  100% {
+   transform: none;
+  }
+
+}
+
+.scroll-text {
+  position: fixed;
+  top: 50%;
+  z-index: -1000;;
+  width: 100000px;
+  margin-left: 125%;
+  
+  color: #1a1a1a;
+  font-family: CalibreWeb-Bold;
+}
