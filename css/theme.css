@@ -6,3 +6,7 @@
 .color-neutral {
   color: var(--color-neutral);
 }
+
+.color-brand {
+  color: var(--color-brand);
+}

@@ -1,4 +1,5 @@
 var $scrollText = $('.scroll-text');
+var $scrollSection = $('.scroll-section');
 var $win = $(window);
 var $toggleMenu = $('#toggle-menu');
 var $body = $('.body');
@@ -50,4 +51,11 @@ $('.thats-all-folks').each(function(){
 $win.on('scroll', function () {
   var top = $win.scrollTop() / -1;
   $scrollText.css('transform', 'translate(' + top + 'px, -50%)');
+});
+
+// Scroll content 
+
+$win.on('scroll', function () {
+  var top = $win.scrollTop() / -1;
+  $scrollSection.css('transform', 'translate(' + top + 'px)');
 });

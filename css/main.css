@@ -24,10 +24,10 @@ html {
 }
 
 h1 {
-  color: var(--color-brand);
+  color: #000;
   font-family: CalibreWeb-Bold;
-  text-transform: uppercase;
   line-height: .82;
+  text-transform: uppercase;
 }
 
 .nina {
@@ -107,6 +107,10 @@ h1 {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.w-3-4 {
+  width: 75%;
 }
 
 @media only screen and (min-width: 46em) {
