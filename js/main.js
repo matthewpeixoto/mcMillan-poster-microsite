@@ -52,28 +52,3 @@ $win.on('scroll', function () {
   var top = $win.scrollTop() / -1;
   $scrollText.css('transform', 'translate(' + top + 'px, -50%)');
 });
-
-// Dyonisius
-
-jQuery(document).ready(function($) {
-  var alterClass = function() {
-    var ww = document.body.clientWidth;
-    if (ww < 736) {
-      $('.scroll-section').addClass('s-scroll-vertical'),
-      $('.scroll-section').removeClass('m-scroll-horizontal');
-    } else if (ww >= 736) {
-      $('.scroll-section').addClass('m-scroll-horizontal'),
-      $('.scroll-section').removeClass('s-scroll-vertical');
-    };
-  };
-  $(window).resize(function(){
-    alterClass();
-  });
-  //Fire it when the page first loads:
-  alterClass();
-});
-
-$win.on('scroll', function () {
-  var top = $win.scrollTop() / -1;
-  $('.m-scroll-horizontal').css('transform', 'translateX(' + top + 'px)');
-});

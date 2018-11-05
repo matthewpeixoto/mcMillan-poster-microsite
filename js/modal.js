@@ -20,3 +20,6 @@ $btnCloseModal.on('click', function () {
   });
 });
 
+$(function () {
+  $('.test').fluidbox();
+});
