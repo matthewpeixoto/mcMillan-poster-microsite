@@ -1,25 +1,25 @@
-var $posterBtn = $('.poster-btn')
-var $btnCloseModal = $('.btn-close-modal');
-var $html = $('html');
-var $body = $('body');
-var $modal = $('.modal');
+// $(function () {
+//   $('.poster').fluidbox({
+//     viewportFill: .8
+//   });
+// });
 
-$posterBtn.on('click', function () {
-  $(this).next().removeClass('hide');
-  $html.add($body).css({
-    overflow: 'hidden',
-    position: 'relative'
-  });
+var $caption = $('<div />', { 'class': 'poster' });
+$caption.html('<div class="img-caption"></div><p class="img-desc"></p><ul><li>Share on:</li><li><a href="#">Facebook</a></li><li><a href="#">Pinterest</a></li><li><a href="#">Twitter</a></li></ul>').appendTo($('body'));
+$(document).on('click', '#custom-trigger-1-social', function(e) {
+  e.preventDefault();
 });
 
-$btnCloseModal.on('click', function () {
-  $modal.addClass('hide');
-  $html.add($body).css({
-    overflow: '',
-    position: ''
-  });
+// Initialize Fluidbox
+$('.poster').fluidbox().on('openend.fluidbox', function() {
+  var $img = $(this).find('img');
+  $('#custom-trigger-1-social').addClass('visible').find('.img-caption').text($img.attr('title')).next('.img-desc').text($img.attr('alt'));
+})
+.on('closestart.fluidbox', function() {
+  $('#custom-trigger-1-social').removeClass('visible');
 });
 
-$(function () {
-  $('.test').fluidbox();
+// Call public methods
+$(window).scroll(function() {
+	$('.poster').fluidbox('close');
 });

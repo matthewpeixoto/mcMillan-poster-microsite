@@ -60,10 +60,6 @@ h1 {
   padding-top: 154.55%;
 }
 
-.photo-bg {
-  background-color: #121212;
-}
-
 .photo-grid {
   max-width: 32em;
 }
@@ -90,11 +86,10 @@ h1 {
   cursor: pointer;
 }
 
-.poster-btn:hover .poster {
-  /* background-color: #141414; */
+/* .poster-unit:hover {
   transform: scale(.97);
-  background-color: #121212;
-}
+  /* background-color: #121212; */
+} */
 
 .js-animate {
   transform: translateY(20%);

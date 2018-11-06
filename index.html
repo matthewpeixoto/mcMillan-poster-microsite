@@ -33,17 +33,17 @@ layout: default
     {% assign people = site.people | reverse %}
     {% for person in people %}
       <li class="poster-unit unit s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
-        <button class="poster-btn btn-link text-left js-animate">
+        <div class="poster-btn btn-link text-left js-animate">
           <figure class="push-0 poster-figure">
-            <div class="poster island-2 photo-bg push">
-              <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
-            </div>
+            <a href="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" id="poster" class="poster poster-{{ person.name | replace: ' ', '-' | downcase }} island-2 photo-bg push">
+              <img class="img-flex poster-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
+            </a>
             <figcaption class="text-center">
               <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
               <p class="kilo push-0 color-neutral">{{ person.title }}</p>
             </figcaption>
           </figure>
-        </button>
+        </div>
         {% include modal.html %}
       </li>
     {% endfor %}
@@ -53,7 +53,3 @@ layout: default
 <footer class="center-content pad-b-8">
   <img class="thats-all-folks" src="{{site.baseurl}}/images/thats-all-folks.png" alt="That's all folks!" />
 </footer>
-
-<a href="{{site.baseurl}}/images/posters/jason-redmond.jpg" title="" class="test overlay-3">
-  <img src="{{site.baseurl}}/images/posters/jason-redmond.jpg" title="" alt="" />
-</a>
