@@ -12,3 +12,4 @@
 {% include_relative hamburger.css %}
 {% include_relative buttons.css %}
 {% include_relative animation.css %}
+{% include_relative page-swipe.css %}
