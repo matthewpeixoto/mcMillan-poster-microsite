@@ -6,6 +6,7 @@ var $modal = $('.modal');
 
 $posterBtn.on('click', function () {
   $(this).next().removeClass('hide');
+  $('.btn-close-modal').addClass('js-btn-close-modal');
   $html.add($body).css({
     overflow: 'hidden',
     position: 'relative'
@@ -18,5 +19,6 @@ $btnCloseModal.on('click', function () {
     overflow: '',
     position: ''
   });
+  $('.btn-close-modal').removeClass('js-btn-close-modal');
 });
 

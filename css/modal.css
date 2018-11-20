@@ -7,7 +7,7 @@
   right: 0;
   
   overflow-y: auto;
-  background-color: #000;
+  background-color: #111;
 
   transition: transform .3s cubic-bezier(.28,.11,.32,1);
 }
@@ -27,9 +27,12 @@
 }
 
 .btn-close-modal {
-  top: 1.3rem;
-  right: 1.3rem;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity .2s ease-in-out .3s;
+  opacity: 0;
+}
+
+.js-btn-close-modal {
+  opacity: 1;
 }
 
 .btn-close-modal:hover {
@@ -51,11 +54,6 @@ ul > li::before {
 
 @media only screen and (min-width: 46em) {
 
-  .btn-close-modal {
-    top: 1.4rem;
-    right: 1.4rem;
-  }
-
   .modal-content {
     max-width: 59em;
   }
@@ -70,11 +68,6 @@ ul > li::before {
 }
 
 @media only screen and (min-width: 67em) {
-
-  .btn-close-modal {
-    top: 1.5rem;
-    right: 1.5rem;
-  }
 
   .modal-details {
     margin-left: 6rem;
