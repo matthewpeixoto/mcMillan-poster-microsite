@@ -52,8 +52,16 @@ h1 {
   max-width: 68em;
 }
 
+.hero {
+  max-height: 100vh;
+}
+
 .gord-head {
-  max-width: 25em;
+  max-width: 40em;
+}
+
+.embed-gord-head {
+  padding-top: 135%;
 }
 
 .embed-11by17 {
