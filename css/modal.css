@@ -7,14 +7,62 @@
   right: 0;
   
   overflow-y: auto;
-  background-color: #111;
+  background-color: #000;
 
-  transition: transform .3s cubic-bezier(.28,.11,.32,1);
+  opacity: 0;
+  display: none;
 }
 
-.hide {
-  /* display: none; */
-  transform: translateY(100vh);
+.modal-bg {
+  background-image: url("{{site.baseurl}}/images/gord-head.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: -150px -100px;
+  z-index: -1000;
+  opacity: 0;
+  
+}
+
+.js-open-modal {
+  animation: fade 1s cubic-bezier(.28,.11,.32,1) forwards;
+  display: block;
+}
+
+.js-open-modal .modal-bg {
+  animation: fade-bg 10s ease-out forwards;
+}
+
+.js-open-modal .modal-img {
+  animation: fade-img 2s ease-out forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+@keyframes fade-img {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal-content {
@@ -24,15 +72,6 @@
 .i-showicons {
   width: 128px;
   height: 43px;
-}
-
-.btn-close-modal {
-  transition: opacity .2s ease-in-out .3s;
-  opacity: 0;
-}
-
-.js-btn-close-modal {
-  opacity: 1;
 }
 
 .btn-close-modal:hover {
@@ -65,12 +104,22 @@ ul > li::before {
     transform: translateY(-50%);
   }
 
+  .modal-bg {
+    background-size: 50% auto;
+    background-position: -150px -100px;
+  }
+
 }
 
 @media only screen and (min-width: 67em) {
 
   .modal-details {
     margin-left: 6rem;
+  }
+
+  .modal-bg {
+    background-size: auto 75vh;
+    background-position: -125px -100px;
   }
 
 }
