@@ -26,6 +26,15 @@
   animation-delay: 2s;
 }
 
+.modal-text-emerge-1 {
+  animation-delay: 0;
+}
+
+.modal-text-emerge-2 {
+  animation-delay: .25s;
+}
+
+
 @keyframes emerge {
 
   0% {
