@@ -53,11 +53,11 @@ h1 {
 }
 
 .gord-head {
-  max-width: 40em;
+  max-width: 25em;
 }
 
 .hero {
-  z-index: -1000;
+  z-index: -1;
 }
 
 .embed-gord-head {
