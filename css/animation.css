@@ -67,9 +67,9 @@
 .scroll-text {
   position: fixed;
   top: 50%;
-  z-index: -1000;;
+  z-index: -1000;
   width: 100000px;
-  margin-left: 125%;
+  margin-left: 175%;
   
   color: #1a1a1a;
   font-family: CalibreWeb-Bold;
