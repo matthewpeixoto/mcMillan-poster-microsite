@@ -2,6 +2,10 @@
   padding-top: 5.2rem;
 }
 
+.pad-b-4 {
+  padding-bottom: 5.2rem;
+}
+
 .pad-t-8 {
   padding-top: 10.4rem;
 }
@@ -18,6 +22,10 @@
 
   .pad-t-4 {
     padding-top: 5.6rem;
+  }
+
+  .pad-b-4 {
+    padding-bottom: 5.6rem;
   }
 
   .pad-t-8 {
@@ -56,6 +64,10 @@
 
   .pad-t-4 {
     padding-top: 6rem;
+  }
+
+  .pad-b-4 {
+    padding-bottom: 6rem;
   }
 
   .pad-t-8 {

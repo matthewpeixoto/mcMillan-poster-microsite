@@ -58,6 +58,8 @@ h1 {
 
 .hero {
   z-index: -1;
+  height: calc(100vh - 6em);
+  min-height: 50em;
 }
 
 .embed-gord-head {
