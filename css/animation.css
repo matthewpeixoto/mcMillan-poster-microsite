@@ -34,6 +34,23 @@
   animation-delay: .25s;
 }
 
+.gord-head {
+  animation: fade-in 5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+   opacity: 1;
+  }
+
+}
+
 
 @keyframes emerge {
 
@@ -68,12 +85,25 @@
   position: fixed;
   top: 50%;
   width: 100000px;
-  margin-left: 125%;
+  margin-left: 200%;
+  z-index: -1;
   
   color: #1a1a1a;
   font-family: CalibreWeb-Bold;
 }
 
-.photo-grid {
-  z-index: 5;
+@media only screen and (min-width: 46em) {
+
+  .scroll-text {
+    margin-left: 150%;
+  }
+  
+}
+
+@media only screen and (min-width: 67em) {
+
+  .scroll-text {
+    margin-left: 125%;
+  }
+  
 }
