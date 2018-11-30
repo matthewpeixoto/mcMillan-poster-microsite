@@ -62,13 +62,10 @@ h1 {
   max-height: 67em;
 }
 
-.embed-gord-head {
-  padding-top: 135%;
-}
-
-.embed-11by17 {
-  padding-top: 154.55%;
-}
+/* .gord-head {
+  height: 100%;
+  width: 100%;
+} */
 
 .photo-bg {
   background-color: #121212;

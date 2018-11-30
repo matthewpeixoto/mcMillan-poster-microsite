@@ -71,11 +71,11 @@
 
 @keyframes head-emerge {
 
-  0% {
+  from {
     transform: translateY(3rem);
   }
 
-  100% {
+  to {
    transform: none;
   }
 
