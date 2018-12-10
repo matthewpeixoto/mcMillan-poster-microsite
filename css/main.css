@@ -28,6 +28,7 @@ h1 {
   font-family: CalibreWeb-Bold;
   line-height: .82;
   text-transform: uppercase;
+  opacity: .8;
 }
 
 .nina {
@@ -52,20 +53,11 @@ h1 {
   max-width: 68em;
 }
 
-.gord-head {
-  max-width: 25em;
-}
-
 .hero {
   z-index: -1;
   min-height: 10em;
   max-height: 67em;
 }
-
-/* .gord-head {
-  height: 100%;
-  width: 100%;
-} */
 
 .photo-bg {
   background-color: #121212;
@@ -98,7 +90,6 @@ h1 {
 }
 
 .poster-btn:hover .poster {
-  /* background-color: #141414; */
   transform: scale(.97);
   background-color: #121212;
 }

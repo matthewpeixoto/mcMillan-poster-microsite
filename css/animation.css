@@ -10,20 +10,20 @@
 }
 
 .text-emerge {
-  animation: emerge 2s ease forwards;
+  animation: emerge 2.5s ease forwards;
   transform: translateY(300px);
 }
 
 .text-emerge-1 {
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 
 .text-emerge-2 {
-  animation-delay: 1.75s;
+  animation-delay: 2.25s;
 }
 
 .text-emerge-3 {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 .modal-text-emerge-1 {
@@ -34,8 +34,12 @@
   animation-delay: .25s;
 }
 
+.modal-text-emerge-3 {
+  animation-delay: .5s;
+}
+
 .gord-head {
-  animation: fade-in 5s ease-out forwards;
+  animation: fade-in 5s ease-out 1s forwards;
   opacity: 0;
 }
 
@@ -88,7 +92,7 @@
   margin-left: 200%;
   z-index: -1;
   
-  color: #1a1a1a;
+  color: rgba(255,255,255,.05);
   font-family: CalibreWeb-Bold;
 }
 
