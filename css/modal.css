@@ -1,25 +1,19 @@
 .modal {
-  position: fixed;
-  z-index: 9999;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  right: 0;
-  
-  overflow-y: auto;
-  background-color: #000;
-
-  opacity: 0;
   display: none;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
+  
+  background-color: #000;
+  opacity: 0;
 }
 
-.modal-bg {
-  background-image: url("{{site.baseurl}}/images/gord-head.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: -150px -100px;
-  z-index: -1000;
-  opacity: 0;
+.modal-video {
+  height: 75vh;
 }
 
 .js-open-modal {
@@ -36,21 +30,27 @@
 }
 
 @keyframes fade {
+  
   from {
     opacity: 0;
   }
+  
   to {
     opacity: 1;
   }
+  
 }
 
 @keyframes fade-bg {
+  
   from {
     opacity: 0;
   }
+  
   to {
     opacity: .5;
   }
+  
 }
 
 @keyframes fade-img {

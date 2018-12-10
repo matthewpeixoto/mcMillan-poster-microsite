@@ -6,6 +6,8 @@ var $modal = $('.modal');
 
 $posterBtn.on('click', function () {
   $(this).next().addClass('js-open-modal');
+  $('.modal-video').currentTime = 0;
+  $('.modal-video')[0].play();
   $html.add($body).css({
     overflow: 'hidden',
     position: 'relative'
@@ -14,6 +16,8 @@ $posterBtn.on('click', function () {
 
 $btnCloseModal.on('click', function () {
   $modal.removeClass('js-open-modal');
+  $('.modal-video').currentTime = 0;
+  $('.modal-video')[0].pause();
   $html.add($body).css({
     overflow: '',
     position: ''
