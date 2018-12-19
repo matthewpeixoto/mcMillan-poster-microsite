@@ -89,11 +89,6 @@ h1 {
   cursor: pointer;
 }
 
-/* .poster-btn:hover .poster {
-  transform: scale(.97);
-  background-color: #121212;
-} */
-
 .js-animate {
   transform: translateY(20%);
   transition: transform 1s ease;

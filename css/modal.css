@@ -68,18 +68,19 @@
   max-width: 32em;
 }
 
-.modal-content {
-  max-height: 100vh;
+.modal-grid {
+  max-width: 32em;
+  min-height: 40em;
 }
 
-
-.modal-wrap {
-  max-width: 100%;
-  max-height: 100%;
+.modal-img-wrap {
+  height: 100%;
+  width: 100%;
 }
 
 .modal-img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .i-showicons {
@@ -110,6 +111,11 @@ ul > li::before {
     max-width: 59em;
   }
 
+  .modal-grid {
+    max-width: 59em;
+    max-height: 100vh;
+  }
+
   .modal-details {
     position: absolute;
     margin-left: 2.8rem;
@@ -120,6 +126,12 @@ ul > li::before {
   .modal-bg {
     background-size: 50% auto;
     background-position: -150px -100px;
+  }
+
+  .m-pin-c {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
 }
