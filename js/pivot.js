@@ -206,7 +206,7 @@
       if (config.shine) {
         _shine.style.opacity         = 1;
         // _shine.style.backgroundImage = 'linear-gradient(' + angle + 'deg, rgba(230, 230, 230, ' + oy / h * 0.5 +') 0%, transparent 80%)';
-        _shine.style.backgroundImage = 'linear-gradient(' + angle + 'deg, rgba(175, 46, 20, ' + oy / h * 0.15 +') 0%, transparent 80%)';
+        _shine.style.backgroundImage = 'linear-gradient(' + angle + 'deg, rgba(175, 46, 20, ' + oy / h * 0.1 +') 0%, transparent 80%)';
       }
     }
 

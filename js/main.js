@@ -60,11 +60,13 @@ pivot.init({
   invert: true,
   shine: true,
   scale: true,
+  sensitivity: 50,
   hoverClass: "poster-hover"
 });
 
 pivot.init({
   selector: ".modal-img-wrap",
   invert: true,
+  sensitivity: 250,
   shine: true
 });
