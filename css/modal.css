@@ -68,6 +68,20 @@
   max-width: 32em;
 }
 
+.modal-content {
+  max-height: 100vh;
+}
+
+
+.modal-wrap {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modal-img {
+  max-width: 100%;
+}
+
 .i-showicons {
   width: 128px;
   height: 43px;

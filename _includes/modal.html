@@ -1,9 +1,11 @@
 <div class="modal hide">
-  <video class="modal-video pin-tl" src="{{site.baseurl}}/videos/gord-head-fly-in.mp4" autoplay muted></video>
-  <div class="modal-content wrapper pad-t-4 push-4 gutter">
+  <video class="modal-video pin-tl" id="modal-video" src="{{site.baseurl}}/videos/gord-head-fly-in.mp4" muted autoplay></video>
+  <div class="modal-content wrapper pad-t-4 pad-b-4 gutter">
     <div class="grid">
       <div class="unit s-1 m-1-2 push-2 m-push-0">
-        <img class="img-flex modal-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{include.name}}'s poster" />
+          <div class="modal-img-wrap">
+            <img class="img-flex modal-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{include.name}}'s poster" />
+          </div>
       </button>
       </div>
       <div class="unit s-1 m-1-2 relative">
@@ -11,17 +13,16 @@
 
           <div class="">
             <div class="overflow-hidden">
-              <h2 class="text-emerge modal-text-emerge-1 push-0 not-bold">{{ person.name }}</h2>
+              <h2 class="modal-text-emerge modal-text-emerge-1 push-0 not-bold">{{ person.name }}</h2>
             </div>
             <div class="overflow-hidden">
-              <p class="text-emerge modal-text-emerge-2 giga color-neutral">{{ person.title }}</p>
+              <p class="modal-text-emerge modal-text-emerge-2 giga color-neutral">{{ person.title }}</p>
             </div>
             <div class="overflow-hidden">
-              <p class="text-emerge modal-text-emerge-3 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              <p class="modal-text-emerge modal-text-emerge-3 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
             </div>
           </div>
 
-          
           <!-- <h3 class="mega social-header push-1-2">Find {% if person.gender == "male" %}him{% endif %}{% if person.gender == "female" %}her{% endif %} on</h3>
           <ul class="mega push-0">
             {% if person.twitter %}
@@ -49,6 +50,7 @@
               </li>
             {% endif %}
           </ul> -->
+
         </div>
       </div>
     </div>

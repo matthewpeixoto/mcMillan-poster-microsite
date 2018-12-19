@@ -26,16 +26,21 @@
   animation-delay: 2.5s;
 }
 
+.modal-text-emerge {
+  transform: translateY(300px);
+  opacity: 0;
+}
+
 .modal-text-emerge-1 {
-  animation-delay: 0;
+  animation: emerge 1.5s ease forwards, fade-in 2.5s ease forwards;
 }
 
 .modal-text-emerge-2 {
-  animation-delay: .25s;
+  animation: emerge 1.5s ease .25s forwards, fade-in 2.5s ease .5s forwards;
 }
 
 .modal-text-emerge-3 {
-  animation-delay: .5s;
+  animation: emerge 1.5s ease .5s forwards, fade-in 2.5s ease 1s forwards;
 }
 
 .gord-head {
@@ -55,7 +60,6 @@
 
 }
 
-
 @keyframes emerge {
 
   0% {
@@ -67,6 +71,7 @@
   }
 
 }
+
 
 .head-emerge {
   animation: head-emerge 1.5s ease-out forwards;
