@@ -23,29 +23,6 @@ html {
   font-family: CalibreWeb-Medium;
 }
 
-/* Prevent iOS scroll */
-
-[id*=iPhone] html, [id*=iPhone] body,
-[id*=iPad] html,
-[id*=iPad] body {
-  height: 100%;
-  overflow: hidden;
-}
-[id*=iPhone] .wrapper,
-[id*=iPad] .wrapper {
-  height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-[id*=iPhone].modal-open,
-[id*=iPad].modal-open {
-  overflow-y: hidden;
-}
-
-.modal-open {
-  overflow: hidden;
-}
-
 h1 {
   color: #000;
   font-family: CalibreWeb-Bold;
