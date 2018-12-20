@@ -2,13 +2,6 @@
   padding: 0;
   border: 0;
   cursor: pointer;
-
-  transition: opacity 300ms ease-in-out 0s;
-}
-
-.hamburger:hover {
-  opacity: 0.5;
-  background-color: transparent;
 }
 
 .hamburger-inner {

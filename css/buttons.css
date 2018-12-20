@@ -143,3 +143,8 @@ button:focus > .btn-focus {
 .js-block-out {
   animation: out 1s ease forwards;
 }
+
+button:hover {
+  background-color: transparent;
+  border-color: transparent;
+}

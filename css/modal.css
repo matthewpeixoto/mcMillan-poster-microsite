@@ -17,16 +17,31 @@
 }
 
 .js-open-modal {
-  animation: fade 1s cubic-bezier(.28,.11,.32,1) forwards;
+  -webkit-animation: fade 1s cubic-bezier(.28,.11,.32,1) forwards;
+          animation: fade 1s cubic-bezier(.28,.11,.32,1) forwards;
   display: block;
 }
 
 .js-open-modal .modal-bg {
-  animation: fade-bg 10s ease-out forwards;
+  -webkit-animation: fade-bg 10s ease-out forwards;
+          animation: fade-bg 10s ease-out forwards;
 }
 
 .js-open-modal .modal-img {
-  animation: fade-img 2s ease-out forwards;
+  -webkit-animation: fade-img 2s ease-out forwards;
+          animation: fade-img 2s ease-out forwards;
+}
+
+@-webkit-keyframes fade {
+  
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+  
 }
 
 @keyframes fade {
@@ -37,6 +52,18 @@
   
   to {
     opacity: 1;
+  }
+  
+}
+
+@-webkit-keyframes fade-bg {
+  
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: .5;
   }
   
 }
@@ -53,14 +80,29 @@
   
 }
 
-@keyframes fade-img {
+@-webkit-keyframes fade-img {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade-img {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -105,7 +147,10 @@ ul > li::before {
 
   .modal-content {
     max-width: 59em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    display: -moz-box;
   }
 
   .modal-grid {
@@ -113,7 +158,8 @@ ul > li::before {
     max-height: 100vh;
     position: relative;
     overflow: hidden;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
   }
@@ -122,7 +168,8 @@ ul > li::before {
     position: absolute;
     margin-left: 2.8rem;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .modal-bg {
@@ -133,7 +180,8 @@ ul > li::before {
   .m-pin-c {
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
 }

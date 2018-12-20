@@ -6,9 +6,9 @@
   height: 24px;
 }
 
-.logo,
-.hamburger {
-  transition: opacity 200ms ease-in-out;
+.hamburger,
+.nav a {
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
 .logo {
@@ -16,13 +16,11 @@
   width: 70px;
 
   color: #fff;
-
-  transition: color 150ms ease, opacity 200ms ease-in-out;
 }
 
-.logo:hover,
-.hamburger:hover {
-  opacity: .5;
+.hamburger:hover,
+.nav a:hover {
+  opacity: .65;
 }
 
 .js-logo-active {
