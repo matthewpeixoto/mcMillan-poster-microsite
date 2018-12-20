@@ -98,8 +98,9 @@ h1 {
   transform: translateY(0);
 }
 
-.overflow-hidden {
+.modal-open {
   overflow: hidden;
+  position: fixed;
 }
 
 .w-3-4 {

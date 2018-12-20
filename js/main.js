@@ -24,7 +24,7 @@ $(document).ready(function(){
 // Prevent scroll
 
 if(isMobile) {
-  $("body").addClass("overflow-hidden");
+  $("body").addClass("modal-open");
 }
 
 // Posters
