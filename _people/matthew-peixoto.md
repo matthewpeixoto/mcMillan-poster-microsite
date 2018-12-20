@@ -3,6 +3,8 @@ name: Matthew Peixoto
 title: Interaction Designer
 gender: male
 
+description: 
+
 date: 2018-04-15
 
 linkedin: https://ca.linkedin.com/in/matthew-peixoto-a84906122

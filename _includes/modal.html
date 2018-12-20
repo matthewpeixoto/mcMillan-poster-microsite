@@ -11,17 +11,47 @@
       <div class="unit s-1 m-1-2 relative">
         <div class="modal-details">
 
-          <div class="">
+          <div>
             <div class="overflow-hidden">
               <h2 class="modal-text-emerge modal-text-emerge-1 push-0 not-bold">{{ person.name }}</h2>
             </div>
             <div class="overflow-hidden">
-              <p class="modal-text-emerge modal-text-emerge-2 giga color-neutral">{{ person.title }}</p>
+              <p class="modal-text-emerge modal-text-emerge-2 giga color-neutral push-0">{{ person.title }}</p>
             </div>
-            <div class="overflow-hidden">
-              <p class="modal-text-emerge modal-text-emerge-3 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            </div>
+            {% if person.description %}	
+              <div class="overflow-hidden pad-t">
+                <p class="modal-text-emerge modal-text-emerge-3 push-0">{{ person.description }}</p>
+              </div>
+            {% endif %}	
           </div>
+
+            <!-- <h3 class="mega social-header push-1-2">Find {% if person.gender == "male" %}him{% endif %}{% if person.gender == "female" %}her{% endif %} on</h3>	
+           <ul class="mega push-0">	
+             {% if person.twitter %}	
+               <li class="push-1-2">	
+                 <a class="btn btn-link btn-reveal" href="{{ person.twitter }}">	
+                   <span class="btn-reveal-block"></span>	
+                   <span class="btn-reveal-label">Twitter</span>	
+                 </a>	
+               </li>	
+             {% endif %}	
+             {% if person.linkedin %}	
+               <li class="push-1-2">	
+                 <a class="btn btn-link btn-reveal" href="{{ person.linkedin }}">	
+                   <span class="btn-reveal-block"></span>	
+                   <span class="btn-reveal-label">LinkedIn</span>	
+                 </a>	
+               </li>	
+             {% endif %}	
+             {% if person.instagram %}	
+               <li>	
+                 <a class="btn btn-link btn-reveal" href="{{ person.instagram }}">	
+                   <span class="btn-reveal-block"></span>	
+                   <span class="btn-reveal-label">Instagram</span>	
+                 </a>	
+               </li>	
+             {% endif %}	
+           </ul> -->
         </div>
       </div>
     </div>

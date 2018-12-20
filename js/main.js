@@ -4,6 +4,7 @@ var $win = $(window);
 var $toggleMenu = $('#toggle-menu');
 var $body = $('body');
 var $html = $('html');
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
 // Header
 
@@ -14,10 +15,10 @@ $(document).ready(function(){
     $('.menu-item').toggleClass('js-menu-item-active');
     $('.hamburger').toggleClass('is-active');
     $('.logo').toggleClass('js-logo-active');
-    $html.toggleClass('overflow-hidden');
-    $html.toggleClass('relative');
-    $body.toggleClass('overflow-hidden');
-    $body.toggleClass('relative');
+    $('html').toggleClass('overflow-hidden');
+    $('html').toggleClass('relative');
+    $('body').toggleClass('overflow-hidden');
+    $('body').toggleClass('relative');
   });
 });
 
@@ -54,17 +55,20 @@ $win.on('scroll', function () {
 
 // Pivot
 
-pivot.init({
-  selector: ".poster",
-  invert: true,
-  shine: true,
-  scale: true,
-  sensitivity: 50,
-  hoverClass: "poster-hover"
-});
+if(!isMobile) {
+  pivot.init({
+    selector: ".poster",
+    invert: true,
+    shine: true,
+    scale: true,
+    sensitivity: 50
+  });
+}
 
-pivot.init({
-  selector: ".modal-img-wrap",
-  invert: true,
-  sensitivity: 150
-});
+if(!isMobile) {
+  pivot.init({
+    selector: ".modal-img-wrap",
+    invert: true,
+    sensitivity: 150
+  });
+}
