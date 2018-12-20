@@ -1,10 +1,10 @@
 <div class="modal hide">
   <video class="modal-video pin-tl" id="modal-video" src="{{site.baseurl}}/videos/gord-head-fly-in.mp4" muted autoplay></video>
-  <div class="modal-content wrapper pad-t-4 pad-b-4 gutter">
-    <div class="grid">
+  <div class="modal-content wrapper">
+    <div class="grid modal-grid w-1 gutter pad-t-4 pad-b-4">
       <div class="unit s-1 m-1-2 push-2 m-push-0">
-          <div class="modal-img-wrap">
-            <img class="img-flex modal-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{include.name}}'s poster" />
+          <div class="modal-img-wrap text-right">
+            <img class="modal-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{include.name}}'s poster" />
           </div>
       </button>
       </div>
@@ -22,41 +22,13 @@
               <p class="modal-text-emerge modal-text-emerge-3 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
             </div>
           </div>
-
-          <!-- <h3 class="mega social-header push-1-2">Find {% if person.gender == "male" %}him{% endif %}{% if person.gender == "female" %}her{% endif %} on</h3>
-          <ul class="mega push-0">
-            {% if person.twitter %}
-              <li class="push-1-2">
-                <a class="btn btn-link btn-reveal" href="{{ person.twitter }}">
-                  <span class="btn-reveal-block"></span>
-                  <span class="btn-reveal-label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
-            {% if person.linkedin %}
-              <li class="push-1-2">
-                <a class="btn btn-link btn-reveal" href="{{ person.linkedin }}">
-                  <span class="btn-reveal-block"></span>
-                  <span class="btn-reveal-label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
-            {% if person.instagram %}
-              <li>
-                <a class="btn btn-link btn-reveal" href="{{ person.instagram }}">
-                  <span class="btn-reveal-block"></span>
-                  <span class="btn-reveal-label">Instagram</span>
-                </a>
-              </li>
-            {% endif %}
-          </ul> -->
-
         </div>
       </div>
     </div>
+    
     <div class="island pin-tr zindex-1000">
       <button class="btn-link btn-close-modal ib">
-        <i class="icon i-24">
+        <i class="icon i-32">
           <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#close"></use></svg>
         </i>
       </button>

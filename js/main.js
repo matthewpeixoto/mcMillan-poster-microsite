@@ -67,6 +67,5 @@ pivot.init({
 pivot.init({
   selector: ".modal-img-wrap",
   invert: true,
-  sensitivity: 250,
-  shine: true
+  sensitivity: 150
 });
