@@ -21,12 +21,6 @@ $(document).ready(function(){
   });
 });
 
-// Prevent scroll
-
-if(isMobile) {
-  $("body").addClass("modal-open");
-}
-
 // Posters
 
 $('.js-animate').each(function(){

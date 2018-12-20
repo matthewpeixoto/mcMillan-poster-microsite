@@ -6,19 +6,11 @@ var $modal = $('.modal');
 
 $posterBtn.on('click', function () {
   $(this).next().addClass('js-open-modal');
-  // var video = $('#modalvideo').get(0);
-  // video.play();
-  $html.add($body).css({
-    overflow: 'hidden',
-    position: 'relative'
-  });
+  $body.addClass("modal-open");
 });
 
 $btnCloseModal.on('click', function () {
   $modal.removeClass('js-open-modal');
-  $html.add($body).css({
-    overflow: '',
-    position: ''
-  });
+  $body.removeClass("modal-open");
 });
 
