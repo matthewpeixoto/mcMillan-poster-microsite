@@ -144,7 +144,8 @@ button:focus > .btn-focus {
   animation: out 1s ease forwards;
 }
 
-button:hover {
+button:hover,
+button:active {
   background-color: transparent;
   border-color: transparent;
 }
