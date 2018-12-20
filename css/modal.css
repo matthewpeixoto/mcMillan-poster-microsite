@@ -1,11 +1,10 @@
 .modal {
   display: none;
-  height: 100vh;
-  overflow-y: auto;
-  position: fixed;
+  height: 100%;
+  overflow: auto;
   right: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 9999;
   
   background-color: #000;
