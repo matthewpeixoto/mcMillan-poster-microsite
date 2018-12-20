@@ -3,7 +3,6 @@ var $mScrollHorizontal = $('.m-scroll-horizontal');
 var $win = $(window);
 var $toggleMenu = $('#toggle-menu');
 var $body = $('.body');
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
 // Header
 
@@ -54,20 +53,17 @@ $win.on('scroll', function () {
 
 // Pivot
 
-if(!isMobile) {
-  pivot.init({
-    selector: ".poster",
-    invert: true,
-    shine: true,
-    scale: true,
-    sensitivity: 50
-  });
-}
+pivot.init({
+  selector: ".poster",
+  invert: true,
+  shine: true,
+  scale: true,
+  sensitivity: 50,
+  hoverClass: "poster-hover"
+});
 
-if(!isMobile) {
-  pivot.init({
-    selector: ".modal-img-wrap",
-    invert: true,
-    sensitivity: 150
-  });
-}
+pivot.init({
+  selector: ".modal-img-wrap",
+  invert: true,
+  sensitivity: 150
+});
