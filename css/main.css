@@ -101,6 +101,7 @@ h1 {
 .modal-open {
   overflow: hidden;
   position: fixed;
+  -webkit-overflow-scrolling: auto;
 }
 
 .w-3-4 {
