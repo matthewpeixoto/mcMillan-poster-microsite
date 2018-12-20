@@ -15,8 +15,8 @@ $(document).ready(function(){
     $('.menu-item').toggleClass('js-menu-item-active');
     $('.hamburger').toggleClass('is-active');
     $('.logo').toggleClass('js-logo-active');
-    // $('html').toggleClass('overflow-hidden').toggleClass('relative').toggleClass('fixed');
-    $('body').toggleClass('body-nav-open');
+    $('html').toggleClass('scroll-lock');
+    $('body').toggleClass('scroll-lock');
   });
 });
 
