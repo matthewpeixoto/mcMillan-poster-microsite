@@ -17,6 +17,7 @@ $(document).ready(function(){
     $('.logo').toggleClass('js-logo-active');
     $('html').toggleClass('scroll-lock');
     $('body').toggleClass('scroll-lock');
+    $('.menu-container').toggleClass('scroll-lock');
   });
 });
 
