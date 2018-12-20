@@ -4,10 +4,10 @@ var $modal = $('.modal');
 
 $posterBtn.on('click', function () {
   $(this).next().addClass('js-open-modal');
-  $('body').addClass("modal-open");
+  $('html').addClass("modal-open");
 });
 
 $btnCloseModal.on('click', function () {
   $modal.removeClass('js-open-modal');
-  $('body').removeClass("modal-open");
+  $('html').removeClass("modal-open");
 });
