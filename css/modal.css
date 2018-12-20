@@ -66,11 +66,7 @@
 
 .modal-content {
   max-width: 32em;
-}
-
-.modal-grid {
-  max-width: 32em;
-  min-height: 40em;
+  height: 100%;
 }
 
 .modal-img-wrap {
@@ -109,11 +105,17 @@ ul > li::before {
 
   .modal-content {
     max-width: 59em;
+    display: flex;
   }
 
   .modal-grid {
     max-width: 59em;
     max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    align-self: center;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
   }
 
   .modal-details {
@@ -145,6 +147,12 @@ ul > li::before {
   .modal-bg {
     background-size: auto 75vh;
     background-position: -125px -100px;
+  }
+  
+
+  .modal-grid {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
 }
