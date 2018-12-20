@@ -2,7 +2,8 @@ var $scrollText = $('.scroll-text');
 var $mScrollHorizontal = $('.m-scroll-horizontal');
 var $win = $(window);
 var $toggleMenu = $('#toggle-menu');
-var $body = $('.body');
+var $body = $('body');
+var $html = $('html');
 
 // Header
 
