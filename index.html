@@ -4,54 +4,58 @@ layout: default
 
 <div class="scroll-text tenamega">Gordon B. McMillan & associates</div>
 
-<div class="hero h-w-1 text-center pad-t-4 pad-b-4">
-  <div class="relative h-1 w-1">
-    <h1 class="nina push-0 zindex-2 pin-c gutter">
-      <div class="overflow-hidden">
-        <div class="text-emerge text-emerge-1 color-brand">M<span class="sup">c</span>Millan</div>
+<main role="main">
+  <div class="wrapper">
+    <div class="hero h-w-1 text-center pad-t-4 pad-b-4">
+      <div class="relative h-1 w-1">
+        <h1 class="nina push-0 zindex-2 pin-c gutter">
+          <div class="overflow-hidden">
+            <div class="text-emerge text-emerge-1 color-brand">M<span class="sup">c</span>Millan</div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="text-emerge text-emerge-2 text-stroke">poster</div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="text-emerge text-emerge-3 text-stroke">archive</div>
+          </div>
+        </h1>
+            
+        <video class="gord-head h-1 pin-c h-1" id="video1" src="{{site.baseurl}}/videos/gord-head-loop.mp4" autoplay muted loop playsinline></video>
       </div>
-      <div class="overflow-hidden">
-        <div class="text-emerge text-emerge-2 text-stroke">poster</div>
-      </div>
-      <div class="overflow-hidden">
-        <div class="text-emerge text-emerge-3 text-stroke">archive</div>
-      </div>
-    </h1>
-        
-    <video class="gord-head h-1 pin-c h-1" id="video1" src="{{site.baseurl}}/videos/gord-head-loop.mp4" autoplay muted loop playsinline></video>
-  </div>
-</div>
-
-<section class="photo-grid wrapper gutter l-gutter-0">
-  <div class="grid push-2">
-    <div class="m-gutter l-gutter-2 giga unit s-1 m-1-2 unit-offset-m-1-2">
-      <div class="intro-border"></div>
-      <p class="pad-t-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
+
+    <section class="photo-grid wrapper gutter l-gutter-0">
+      <div class="grid push-2">
+        <div class="m-gutter l-gutter-2 giga unit s-1 m-1-2 unit-offset-m-1-2">
+          <div class="intro-border"></div>
+          <p class="pad-t-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </div>
+      
+      <ol class="grid list-group push-0">
+        {% assign people = site.people | reverse %}
+        {% for person in people %}
+          <li class="poster-unit unit s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
+            <button class="poster-btn btn-link text-left js-animate">
+              <figure class="push-0 poster-figure">
+                <div class="push">
+                  <div class="poster island-2 photo-bg">
+                    <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
+                  </div>
+                </div>
+                <figcaption class="text-center">
+                  <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
+                  <p class="kilo push-0 color-neutral">{{ person.title }}</p>
+                </figcaption>
+              </figure>
+            </button>
+            {% include modal.html %}
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
   </div>
-  
-  <ol class="grid list-group push-0">
-    {% assign people = site.people | reverse %}
-    {% for person in people %}
-      <li class="poster-unit unit s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
-        <button class="poster-btn btn-link text-left js-animate">
-          <figure class="push-0 poster-figure">
-            <div class="push">
-              <div class="poster island-2 photo-bg">
-                <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
-              </div>
-            </div>
-            <figcaption class="text-center">
-              <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
-              <p class="kilo push-0 color-neutral">{{ person.title }}</p>
-            </figcaption>
-          </figure>
-        </button>
-        {% include modal.html %}
-      </li>
-    {% endfor %}
-  </ol>
-</section>
+</main>
 
 <footer class="center-content pad-b-8">
   <img class="thats-all-folks" src="{{site.baseurl}}/images/thats-all-folks.png" alt="That's all folks!" />
