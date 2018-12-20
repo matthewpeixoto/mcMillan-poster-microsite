@@ -30,6 +30,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.body-nav-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 .nina {
   line-height: .82;
 }
@@ -99,6 +105,10 @@ h1 {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .modal-open {
