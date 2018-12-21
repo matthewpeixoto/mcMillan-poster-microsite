@@ -133,7 +133,7 @@ h1 {
 @media only screen and (min-width: 67em) {
 
   .photo-grid {
-    max-width: 60em;
+    max-width: 62em;
   }
 
   .poster-unit:nth-child(odd) {

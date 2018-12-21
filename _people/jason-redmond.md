@@ -3,7 +3,7 @@ name: Jason Redmond
 title: Digital Operations Manager
 gender: male
 
-description: 
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 date: 2017-12-15
 
