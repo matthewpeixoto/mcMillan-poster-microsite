@@ -34,19 +34,19 @@ layout: default
     {% assign people = site.people | reverse %}
     {% for person in people %}
       <li class="poster-unit unit s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
-        <div class="poster-btn btn-link text-left js-animate">
-          <figure class="push-0 poster-figure">
-            <div class="push">
-              <div class="poster island-2 photo-bg">
-                <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
-              </div>
+   
+        <figure class="js-animate push-0 poster-figure poster-btn">
+          <div class="push">
+            <div class="poster island-2 photo-bg">
+              <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
             </div>
-            <figcaption class="text-center">
-              <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
-              <p class="kilo push-0 color-neutral">{{ person.title }}</p>
-            </figcaption>
-          </figure>
-        </div>
+          </div>
+          <figcaption class="text-center">
+            <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
+            <p class="kilo push-0 color-neutral">{{ person.title }}</p>
+          </figcaption>
+        </figure>
+  
         {% include modal.html %}
       </li>
     {% endfor %}
