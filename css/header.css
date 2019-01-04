@@ -50,27 +50,3 @@
 .menu-link {
   color: #fff;
 }
-
-.loader-container {
-  height: 4px;
-}
-
-.loader {
-  height: 4px;
-  width: 175%;
-  
-  background-color: red;
-  animation: load 3s cubic-bezier(.63,.01,.66,1.01) forwards;
-}
-
-@keyframes load {
-
-  0% {
-    transform: translateX(-125%);
-  }
-
-  100% {
-    transform: translateX(125%);
-  }
-
-}
