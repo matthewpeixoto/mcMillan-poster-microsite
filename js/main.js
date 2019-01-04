@@ -4,6 +4,9 @@ var $win = $(window);
 var $toggleMenu = $('#toggle-menu');
 var $body = $('body');
 var $html = $('html');
+var $posterBtn = $('.poster-btn')
+var $btnCloseModal = $('.btn-close-modal');
+var $modal = $('.modal');
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
 // Header
@@ -93,4 +96,23 @@ $(function() {
   });
 
   $.getJSON('http://jsonip.com');
+});
+
+// Modal 
+
+var $posterBtn = $('.poster-btn')
+var $btnCloseModal = $('.btn-close-modal');
+var $modal = $('.modal');
+
+$posterBtn.on('click', function () {
+  $(this).next().addClass('js-open-modal');
+  $('html').addClass("modal-open");
+  if(!isMobile) {
+    $(this).parent().find('#modal-video').trigger('play');
+  }
+});
+
+$btnCloseModal.on('click', function () {
+  $modal.removeClass('js-open-modal');
+  $('html').removeClass("modal-open");
 });
