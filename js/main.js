@@ -68,6 +68,12 @@ if(!isMobile) {
   pivot.init({
     selector: ".modal-img-wrap",
     invert: true,
+    shine: true,
     sensitivity: 150
   });
 }
+
+// Parallax 
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);

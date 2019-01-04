@@ -1,10 +1,10 @@
-<div class="modal hide">
-  <video class="modal-video pin-tl" id="modal-video" src="{{site.baseurl}}/videos/gord-head-fly-in.mp4" muted></video>
-  <div class="modal-content wrapper">
+<div class="modal hide" id="scene">
+  <video data-depth="0.025" class="modal-video pin-tl" id="modal-video" src="{{site.baseurl}}/videos/gord-head-fly-in.mp4" muted></video>
+  <div data-depth="0.1" class="modal-content wrapper">
     <div class="grid modal-grid w-1 gutter pad-t-4 pad-b-4">
       <div class="unit s-1 m-1-2 push-2 m-push-0">
           <div class="modal-img-wrap text-right">
-            <img class="modal-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{include.name}}'s poster" />
+            <img class="modal-img" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{person.name}}'s poster" />
           </div>
       </button>
       </div>
