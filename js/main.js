@@ -98,7 +98,7 @@ $(function() {
   $.getJSON('http://jsonip.com');
 });
 
-// Modal 
+// Modal
 
 var $posterBtn = $('.poster-btn')
 var $btnCloseModal = $('.btn-close-modal');
