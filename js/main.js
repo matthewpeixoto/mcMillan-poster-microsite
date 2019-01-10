@@ -116,3 +116,10 @@ $btnCloseModal.on('click', function () {
   $modal.removeClass('js-open-modal');
   $('html').removeClass("modal-open");
 });
+
+// Masonry
+
+$('.masonry-grid').masonry({
+  // options
+  itemSelector: '.masonry-grid-item'
+});

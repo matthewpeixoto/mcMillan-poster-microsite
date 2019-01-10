@@ -22,20 +22,19 @@ layout: default
   </div>
 </div>
 
-<section class="photo-grid wrapper gutter l-gutter-0">
-  <div class="grid push-2">
-    <div class="m-gutter l-gutter-2 giga unit s-1 m-1-2 unit-offset-m-1-2">
+<section class="poster-grid-wrapper wrapper gutter l-gutter-0">
+
+  <ol class="masonry-grid list-group push-0">
+    <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
       <div class="intro-border"></div>
-      <p class="pad-t-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-    </div>
-  </div>
-  
-  <ol class="grid list-group push-0">
+      <p class="giga pad-t-2 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    </li>
+    
     {% assign people = site.people | reverse %}
     {% for person in people %}
-      <li class="poster-unit unit s-1 m-1-2 m-gutter l-gutter-2">
+      <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
    
-        <figure class="js-animate push-0 poster-figure poster-btn push-4 m-push-8">
+        <figure class="js-animate push-0 cursor-pointer">
           <div class="push">
             <div class="poster island-2 photo-bg">
               <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
@@ -50,6 +49,7 @@ layout: default
         {% include modal.html %}
       </li>
     {% endfor %}
+  
   </ol>
 </section>
 
