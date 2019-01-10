@@ -67,7 +67,7 @@ h1 {
   background-color: #121212;
 }
 
-.photo-grid {
+.poster-grid-wrapper {
   max-width: 32em;
 }
 
@@ -89,7 +89,7 @@ h1 {
   transition: transform .2s ease-out;
 }
 
-.poster-figure {
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -120,24 +120,16 @@ h1 {
 
 @media only screen and (min-width: 46em) {
 
-  .photo-grid {
+  .poster-grid-wrapper {
     max-width: 52em;
-  }
-
-  .poster-unit:nth-child(odd) {
-    margin-top: -11.35rem;
   }
 
 }
 
 @media only screen and (min-width: 67em) {
 
-  .photo-grid {
+  .poster-grid-wrapper {
     max-width: 62em;
-  }
-
-  .poster-unit:nth-child(odd) {
-    margin-top: -12.9rem;
   }
 
 }
