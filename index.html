@@ -34,7 +34,7 @@ layout: default
     {% for person in people %}
       <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
    
-        <figure class="js-animate push-0 cursor-pointer">
+        <figure class="js-animate push-0 cursor-pointer poster-btn">
           <div class="push">
             <div class="poster island-2 photo-bg">
               <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
