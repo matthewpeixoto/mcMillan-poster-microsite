@@ -121,5 +121,37 @@ $btnCloseModal.on('click', function () {
 
 $('.masonry-grid').masonry({
   // options
-  itemSelector: '.masonry-grid-item'
+  itemSelector: '.masonry-grid-item',
+  isAnimated: true,
+  animationOptions: {
+    duration: 0,
+    easing: 'linear',
+    queue: false
+  }
 });
+
+// Intro
+
+$('.intro').each(function(){
+
+  var self = $(this);
+
+  $(this).waypoint(function () {
+    self.addClass('js-intro-animated');
+  }, {offset: '90%'});
+
+});
+
+$('.indicator-inner').each(function(){
+
+  var self = $(this);
+
+  $(this).waypoint(function () {
+    self.toggleClass('js-indicator-hide');
+  }, {offset: '80%'});
+
+});
+
+// Smooth Scroll
+
+$('.nav').localScroll();

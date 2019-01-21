@@ -1,0 +1,48 @@
+.indicator-container {
+  display: block;
+  position: absolute;
+  z-index: 80;
+  bottom: 10%;
+  animation: fade-in 1s ease-out 5s forwards;
+  opacity: 0;
+}
+
+.indicator-inner {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 36px;
+  margin: 0 auto;
+  text-align: center;
+  transition: opacity 1s ease-out 1s;
+}
+
+.indicator-icon {
+ max-width: 100%;
+ height: auto; 
+ animation: indicator-bounce 1s ease-in-out infinite;
+}
+
+.indicator-icon-bottom {
+  animation-delay: 0.1s;
+  position: relative;
+  top: -15px;
+}
+
+.js-indicator-hide {
+  opacity: 0;
+}
+
+@keyframes indicator-bounce {
+
+  0%, 100% {
+    opacity: .25;
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(0, 3px, 0);
+  }
+
+}

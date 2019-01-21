@@ -48,6 +48,40 @@
   opacity: 0;
 }
 
+.intro-line {
+  height: 3px;
+  background-color: #fff;
+  width: 40%;
+  
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+.intro-text {
+  transform: translateY(300px);
+  opacity: 0;
+}
+
+.js-intro-animated .intro-line {
+  animation: line-draw 1.5s ease forwards, fade-in 2.5s ease forwards;
+}
+
+.js-intro-animated .intro-text {
+  animation: emerge 1.5s ease forwards, fade-in 2.5s ease forwards;
+}
+
+@keyframes line-draw {
+
+  0% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+   transform: none;
+  }
+
+}
+
 @keyframes fade-in {
 
   0% {

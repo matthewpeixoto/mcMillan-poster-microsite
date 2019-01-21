@@ -1,5 +1,7 @@
 .header {
   min-width: 320px;
+  opacity: 0;
+  animation: fade-in 1s ease-out 5s forwards;
 }
 
 .grid-header {

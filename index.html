@@ -4,30 +4,18 @@ layout: default
 
 <div class="scroll-text tenamega">Gordon B. McMillan & associates</div>
 
-<div class="hero h-w-1 text-center pad-t-4 pad-b-4">
-  <div class="relative h-1 w-1">
-    <h1 class="nina push-0 zindex-2 pin-c gutter">
-      <div class="overflow-hidden">
-        <div class="text-emerge text-emerge-1 color-brand">M<span class="sup">c</span>Millan</div>
-      </div>
-      <div class="overflow-hidden">
-        <div class="text-emerge text-emerge-2 text-stroke">poster</div>
-      </div>
-      <div class="overflow-hidden">
-        <div class="text-emerge text-emerge-3 text-stroke">archive</div>
-      </div>
-    </h1>
-        
-    <video class="gord-head h-1 pin-c h-1" id="video1" src="{{site.baseurl}}/videos/gord-head-loop.mp4" autoplay muted loop playsinline></video>
-  </div>
-</div>
+{% include hero.html %}
 
-<section class="poster-grid-wrapper wrapper gutter l-gutter-0">
+<section id="gallery" class="pad-t-4 poster-grid-wrapper wrapper gutter l-gutter-0">
 
   <ol class="masonry-grid list-group push-0">
-    <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
-      <div class="intro-border"></div>
-      <p class="giga pad-t-2 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8 intro">
+      <div class="overflow-hidden">
+        <div class="intro-line"></div>
+      </div>
+      <div class="overflow-hidden">
+        <p class="intro-text giga pad-t-2 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
     </li>
     
     {% assign people = site.people | reverse %}

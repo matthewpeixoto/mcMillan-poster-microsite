@@ -60,7 +60,8 @@ h1 {
 .hero {
   z-index: -1;
   min-height: 10em;
-  max-height: 67em;
+  /* max-height: 66em; */
+  max-height: 100vh;
 }
 
 .photo-bg {
@@ -71,18 +72,8 @@ h1 {
   max-width: 32em;
 }
 
-.intro {
-  border-top: 3px solid #fff;
-}
-
-.intro-border {
-  height: 3px;
-  background-color: #fff;
-  width: 40%;
-}
-
 .thats-all-folks {
-  max-width: 14em;
+  max-width: 12em;
 }
 
 .poster {
