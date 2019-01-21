@@ -148,10 +148,10 @@ $('.indicator-inner').each(function(){
 
   $(this).waypoint(function () {
     self.toggleClass('js-indicator-hide');
-  }, {offset: '80%'});
+  }, {offset: '75%'});
 
 });
 
 // Smooth Scroll
 
-$('.nav').localScroll();
+$('.indicator-container').localScroll();
