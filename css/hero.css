@@ -1,10 +1,13 @@
+.hero {
+  z-index: -1;
+  min-height: 10em;
+  max-height: 100vh;
+}
+
 .indicator-link {
-  display: block;
-  position: absolute;
-  z-index: 80;
+  opacity: 0;
   bottom: 10%;
   animation: fade-in 1s ease-out 5s forwards;
-  opacity: 0;
   cursor: pointer;
 }
 
@@ -18,10 +21,11 @@
   transition: opacity 1s ease-out 1s;
 }
 
-.indicator-icon {
- max-width: 100%;
- height: auto; 
- animation: indicator-bounce 1s ease-in-out infinite;
+.i-indicator {
+  width: 16px;
+  height: 9px;
+  color: var(--color-brand);
+  animation: indicator-bounce 1s ease-in-out infinite;
 }
 
 .indicator-icon-bottom {

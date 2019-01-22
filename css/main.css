@@ -57,13 +57,6 @@ h1 {
   max-width: 68em;
 }
 
-.hero {
-  z-index: -1;
-  min-height: 10em;
-  /* max-height: 66em; */
-  max-height: 100vh;
-}
-
 .photo-bg {
   background-color: #121212;
 }
