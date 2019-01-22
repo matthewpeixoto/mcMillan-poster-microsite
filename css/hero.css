@@ -4,6 +4,13 @@
   max-height: 100vh;
 }
 
+h1 {
+  color: #000;
+  font-family: CalibreWeb-Bold;
+  line-height: .82;
+  text-transform: uppercase;
+}
+
 .indicator-link {
   opacity: 0;
   bottom: 10%;
