@@ -5,42 +5,5 @@ layout: default
 <div class="scroll-text tenamega">Gordon B. McMillan & associates</div>
 
 {% include hero.html %}
-
-<section id="gallery" class="pad-t-4 poster-grid-wrapper wrapper gutter l-gutter-0">
-
-  <ol class="masonry-grid list-group push-0">
-    <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8 intro">
-      <div class="overflow-hidden">
-        <div class="intro-line"></div>
-      </div>
-      <div class="overflow-hidden">
-        <p class="intro-text giga pad-t-2 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      </div>
-    </li>
-    
-    {% assign people = site.people | reverse %}
-    {% for person in people %}
-      <li class="masonry-grid-item s-1 m-1-2 m-gutter l-gutter-2 push-4 m-push-8">
-   
-        <figure class="js-animate push-0 cursor-pointer poster-btn">
-          <div class="push">
-            <div class="poster island-2 photo-bg">
-              <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
-            </div>
-          </div>
-          <figcaption class="text-center">
-            <h2 class="mega push-0 not-bold">{{ person.name }}</h2>
-            <p class="kilo push-0 color-neutral">{{ person.title }}</p>
-          </figcaption>
-        </figure>
-  
-        {% include modal.html %}
-      </li>
-    {% endfor %}
-  
-  </ol>
-</section>
-
-<footer class="center-content pad-b-8">
-  <img class="thats-all-folks" src="{{site.baseurl}}/images/thats-all-folks.png" alt="That's all folks!" />
-</footer>
+{% include gallery.html %}
+{% include footer.html %}
