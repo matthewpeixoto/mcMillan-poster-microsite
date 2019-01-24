@@ -13,15 +13,6 @@ $(document).ready(function() {
     e.preventDefault();
   });
   
-  var overlayClose = function() {
-    $.unlockBody();
-    $('body').removeClass('overlay-open');
-  }
-  var overlayOpen = function() {
-    $('body').addClass('overlay-open');
-    $.lockBody();
-  }
-
   $.lockBody = function() {
     if(window.pageYOffset) {
       scrollTop = window.pageYOffset;
