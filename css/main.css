@@ -23,13 +23,6 @@ html {
   font-family: CalibreWeb-Medium;
 }
 
-h1 {
-  color: #000;
-  font-family: CalibreWeb-Bold;
-  line-height: .82;
-  text-transform: uppercase;
-}
-
 .scroll-lock {
   overflow: hidden;
   height: 100%;

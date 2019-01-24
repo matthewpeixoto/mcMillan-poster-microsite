@@ -106,7 +106,7 @@ var $modal = $('.modal');
 
 $posterBtn.on('click', function () {
   $(this).next().addClass('js-open-modal');
-  $('html').addClass("modal-open");
+  $('html,body').addClass("modal-open");
   if(!isMobile) {
     $(this).parent().find('#modal-video').trigger('play');
   }
@@ -114,7 +114,7 @@ $posterBtn.on('click', function () {
 
 $btnCloseModal.on('click', function () {
   $modal.removeClass('js-open-modal');
-  $('html').removeClass("modal-open");
+  $('html,body').removeClass("modal-open");
 });
 
 // Masonry
@@ -155,3 +155,5 @@ $('.indicator-inner').each(function(){
 // Smooth Scroll
 
 $('.indicator-container').localScroll();
+
+
