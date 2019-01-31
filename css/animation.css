@@ -60,6 +60,7 @@
 .intro-text {
   transform: translateY(300px);
   opacity: 0;
+  color: #fff;
 }
 
 .js-intro-animated .intro-line {

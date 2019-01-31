@@ -117,19 +117,6 @@ $btnCloseModal.on('click', function () {
   // $('html,body').removeClass("modal-open");
 });
 
-// Masonry
-
-$('.masonry-grid').masonry({
-  // options
-  itemSelector: '.masonry-grid-item',
-  isAnimated: true,
-  animationOptions: {
-    duration: 0,
-    easing: 'linear',
-    queue: false
-  }
-});
-
 // Intro
 
 $('.intro').each(function(){
