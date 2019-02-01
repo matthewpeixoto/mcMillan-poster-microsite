@@ -30,8 +30,12 @@ $('.js-animate').each(function(){
 
   var self = $(this);
 
-  $(this).waypoint(function () {
-    self.addClass('js-animated');
+  $(this).waypoint(function (direction) {
+    if (direction == 'down') {
+      self.addClass('js-animated');
+    } else {
+      self.removeClass('js-animated');
+    }
   }, {offset: '100%'});
 
 });
