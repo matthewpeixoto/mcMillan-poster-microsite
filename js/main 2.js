@@ -31,7 +31,11 @@ $('.js-animate').each(function(){
   var self = $(this);
 
   $(this).waypoint(function (direction) {
-    self.addClass('js-animated');
+    if (direction == 'down') {
+      self.addClass('js-animated');
+    } else {
+      self.removeClass('js-animated');
+    }
   }, {offset: '100%'});
 
 });
@@ -105,6 +109,7 @@ var $btnCloseModal = $('.btn-close-modal');
 var $modal = $('.modal');
 
 $posterBtn.on('click', function () {
+  $('body').addClass('modal-open');
   $(this).next().addClass('js-open-modal');
   // $('html,body').addClass("modal-open");
   if(!isMobile) {

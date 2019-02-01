@@ -1,5 +1,5 @@
 .modal {
-  background-color: #000;
+  background-color: rgba(0,0,0,1);
   bottom: 0;
   display: none;
   height: 100vh;
@@ -20,8 +20,8 @@
 }
 
 .js-open-modal {
-  -webkit-animation: fade 1s cubic-bezier(.28,.11,.32,1) forwards;
-          animation: fade 1s cubic-bezier(.28,.11,.32,1) forwards;
+  -webkit-animation: fade 0s cubic-bezier(.28,.11,.32,1) forwards;
+          animation: fade 0s cubic-bezier(.28,.11,.32,1) forwards;
   display: block;
 }
 
