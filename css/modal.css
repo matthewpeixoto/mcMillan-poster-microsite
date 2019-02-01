@@ -20,8 +20,7 @@
 }
 
 .js-open-modal {
-  -webkit-animation: fade 0s cubic-bezier(.28,.11,.32,1) forwards;
-          animation: fade 0s cubic-bezier(.28,.11,.32,1) forwards;
+  opacity: 1;
   display: block;
 }
 
