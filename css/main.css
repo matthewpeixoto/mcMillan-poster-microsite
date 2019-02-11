@@ -13,6 +13,11 @@
   src: url("../fonts/CalibreWeb-Bold.woff") format('woff');
 }
 
+@font-face {
+  font-family: "CalibreWeb-Black";
+  src: url("../fonts/CalibreWeb-Black.woff") format('woff');
+}
+
 html {
   min-width: 320px;
   overflow-x: hidden;
@@ -26,6 +31,10 @@ html {
 .scroll-lock {
   overflow: hidden;
   height: 100%;
+}
+
+.font-black {
+  font-family: "CalibreWeb-Black";
 }
 
 .nina {

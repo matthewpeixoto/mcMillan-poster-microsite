@@ -33,7 +33,7 @@
   height: 100vh;
   min-width: 320px;
 
-  background-color: #292D2E;
+  background-color: #000;
   display: none;
 }
 
@@ -51,4 +51,55 @@
 
 .menu-link {
   color: #fff;
+}
+
+.nav {
+  transform: rotate(-10deg);
+}
+
+.nav li {
+  line-height: .8;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.nav span:hover {
+  color: var(--color-brand);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
+}
+
+@keyframes slide-left {
+
+  0% {
+    transform: translateX(3000px);
+  }
+
+  100% {
+    transform: translateX(1000px);
+  }
+
+}
+
+@keyframes slide-right {
+
+  0% {
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translateX(3000px);
+  }
+
+}
+
+.nav li:nth-child(even) {
+  animation: slide-left 120s linear infinite alternate;
+}
+
+.nav li:nth-child(odd) {
+  animation: slide-right 120s linear infinite alternate;
 }
