@@ -5,10 +5,10 @@
         <div class="intro-line"></div>
       </div>
       <div class="overflow-hidden">
-        <p class="intro-text giga pad-t-2 push-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <p class="intro-text giga pad-t-2 push-0">Our new hires deserve more than just a personal phone extension.</p>
       </div>
     </li>
-    {% assign people = site.people | reverse %}
+    {% assign people = site.people | sort: 'date' %}
     {% for person in people %}
     <li class="item m-gutter l-gutter-2 push-4 m-push-8">
       <figure class="js-animate push-0 cursor-pointer poster-btn">
