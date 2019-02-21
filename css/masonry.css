@@ -1,0 +1,21 @@
+.masonry:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.item {
+  float: left;
+  width: 50%;
+  height: auto;
+  counter-increment: item;
+}
+
+.item:before {
+  display: block;
+  content: counter(item);
+}
+
+.intro {
+  height: auto;
+}

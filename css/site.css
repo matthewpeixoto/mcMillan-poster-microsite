@@ -14,4 +14,4 @@
 {% include_relative animation.css %}
 {% include_relative progress-bar.css %}
 {% include_relative hero.css %}
-{% include_relative gallery.css %}
+{% include_relative masonry.css %}
