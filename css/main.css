@@ -13,6 +13,11 @@
   src: url("../fonts/CalibreWeb-Bold.woff") format('woff');
 }
 
+@font-face {
+  font-family: "CalibreWeb-Black";
+  src: url("../fonts/CalibreWeb-Black.woff") format('woff');
+}
+
 html {
   min-width: 320px;
   overflow-x: hidden;
@@ -28,8 +33,13 @@ html {
   height: 100%;
 }
 
+.font-weight-black {
+  font-family: CalibreWeb-Black;
+}
+
 .nina {
-  line-height: .82;
+  line-height: .8;
+  font-family: CalibreWeb-Black;
 }
 
 .text-stroke {

@@ -133,7 +133,12 @@
   z-index: -1;
   
   color: rgba(255,255,255,.05);
-  font-family: CalibreWeb-Bold;
+  font-family: CalibreWeb-Black;
+}
+
+.scroll-text-sup {
+  font-size: 75%;
+  bottom: 0.375em;
 }
 
 @media only screen and (min-width: 46em) {
