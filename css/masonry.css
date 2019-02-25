@@ -6,7 +6,7 @@
 
 .item {
   float: left;
-  width: 50%;
+  width: 100%;
   height: auto;
   counter-increment: item;
 }
@@ -18,4 +18,12 @@
 
 .intro {
   height: auto;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .item {
+    width: 50%;
+  }
+
 }
