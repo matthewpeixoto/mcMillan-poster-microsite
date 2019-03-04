@@ -8,9 +8,22 @@
   height: 24px;
 }
 
-.hamburger,
-.nav a {
+.hamburger {
   transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.nav a {
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+
+  transition: color .2s ease,transform .5s ease;
+  opacity: .4;
+}
+
+.nav a:hover {
+  color: #fff;
+  opacity: 1;
 }
 
 .logo {
@@ -20,8 +33,7 @@
   color: #fff;
 }
 
-.hamburger:hover,
-.nav a:hover {
+.hamburger:hover {
   opacity: .65;
 }
 

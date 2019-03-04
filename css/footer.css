@@ -1,0 +1,12 @@
+.i-mcmillan {
+  height: 24px;
+  width: 165px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: var(--color-brand);
+}

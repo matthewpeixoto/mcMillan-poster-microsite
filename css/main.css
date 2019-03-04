@@ -43,8 +43,7 @@ html {
 }
 
 .text-stroke {
-  color: var(--color-brand);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-text-stroke: 1px var(--color-brand);
   text-stroke: 1px var(--color-brand);
 }
@@ -66,10 +65,6 @@ html {
 
 .poster-grid-wrapper {
   max-width: 32em;
-}
-
-.thats-all-folks {
-  max-width: 12em;
 }
 
 .poster {
