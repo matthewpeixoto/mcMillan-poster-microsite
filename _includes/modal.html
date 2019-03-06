@@ -19,9 +19,14 @@
             </div>
             {% if person.description %}	
               <div class="overflow-hidden pad-t">
-                <p class="modal-text-emerge modal-text-emerge-3 push-0">{{ person.description }}</p>
+                <p class="modal-text-emerge modal-text-emerge-3 push-0 font-weight-regular">{{ person.description }}</p>
               </div>
-            {% endif %}	
+            {% endif %}
+            {% if person.designed-by %}	
+              <div class="overflow-hidden pad-t-1-2">
+                <p class="modal-text-emerge modal-text-emerge-4 push-0 font-weight-regular italic color-neutral">Poster designed by {{ person.designed-by }}</p>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>

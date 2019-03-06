@@ -43,6 +43,10 @@
   animation: emerge 1.5s ease .5s forwards, fade-in 2.5s ease 1s forwards;
 }
 
+.modal-text-emerge-4 {
+  animation: emerge 1.5s ease .75s forwards, fade-in 2.5s ease 1.5s forwards;
+}
+
 .gord-head {
   animation: fade-in 5s ease-out 1s forwards;
   opacity: 0;

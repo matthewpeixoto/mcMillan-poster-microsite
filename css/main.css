@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "CalibreWeb";
+  font-family: "CalibreWeb-Regular";
   src: url("../fonts/CalibreWeb-Regular.woff") format('woff');
 }
 
@@ -35,6 +35,10 @@ html {
 
 .font-weight-black {
   font-family: CalibreWeb-Black;
+}
+
+.font-weight-regular {
+  font-family: CalibreWeb-Regular;
 }
 
 .nina, .yotta {
