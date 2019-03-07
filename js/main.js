@@ -143,4 +143,17 @@ $('.indicator-inner').each(function(){
 
 $('.indicator-container').localScroll();
 
+// Cycle text 
 
+var emojis = $('span[id^="content-"]').hide(),
+    i = 0;
+
+(function cycle() { 
+
+    emojis.eq(i).fadeIn(400)
+              .delay(5000)
+              .fadeOut(400, cycle);
+
+    i = ++i % emojis.length;
+
+})();
