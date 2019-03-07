@@ -15,7 +15,7 @@
               <h2 class="modal-text-emerge modal-text-emerge-1 push-0 not-bold tera">{{ person.name }}</h2>
             </div>
             <div class="overflow-hidden">
-              <p class="modal-text-emerge modal-text-emerge-2 mega color-neutral push-0">{{ person.title }}</p>
+              <p class="modal-text-emerge color-neutral modal-text-emerge-2 mega push-0">{{ person.title }}</p>
             </div>
             {% if person.description %}	
               <div class="overflow-hidden pad-t">
@@ -23,8 +23,8 @@
               </div>
             {% endif %}
             {% if person.designed-by %}	
-              <div class="overflow-hidden pad-t-1-2">
-                <p class="modal-text-emerge modal-text-emerge-4 push-0 font-weight-regular italic color-neutral">Poster designed by {{ person.designed-by }}</p>
+              <div class="overflow-hidden pad-t">
+                <p class="modal-text-emerge modal-text-emerge-4 designed-by push-0 font-weight-regular italic">Poster designed by {{ person.designed-by }}</p>
               </div>
             {% endif %}
           </div>

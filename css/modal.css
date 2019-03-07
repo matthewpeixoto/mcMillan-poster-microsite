@@ -34,6 +34,10 @@
           animation: fade-img 2s ease-out forwards;
 }
 
+.designed-by {
+  color: #616161;
+}
+
 @-webkit-keyframes fade {
   
   from {

@@ -5,6 +5,8 @@ gender: male
 
 description:
 
+designed-by: JP Brown
+
 date: 2017-11-15
 
 twitter: https://twitter.com/jpbr_own
