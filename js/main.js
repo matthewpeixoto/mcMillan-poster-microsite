@@ -145,7 +145,7 @@ $('.indicator-container').localScroll();
 
 // Cycle text 
 
-var emojis = $('span[id^="content-"]').hide(),
+var emojis = $('span[id^="emoji-"]').hide(),
     i = 0;
 
 (function cycle() { 
