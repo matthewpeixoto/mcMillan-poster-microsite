@@ -3,7 +3,7 @@ name: Miranda Taing
 title: UX Specialist
 gender: female
 
-description:
+description: Catch a glimpse of Tessa and Scott within Miranda's poster. She's a big fan.
 
 designed-by: Jared Barter
 
