@@ -28,7 +28,9 @@
       <figure class="js-animate push-0 cursor-pointer poster-btn">
         <div class="push">
           <div class="poster island-2 photo-bg">
-            <img class="img-flex" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
+            <div class="embed embed-{{ person.name | downcase | replace: " ", "-" }}">
+              <img class="embed-item" src="{{site.baseurl}}/images/posters/{{ person.name | replace: ' ', '-' | downcase }}.jpg" alt="{{ person.name }}'s poster" />
+            </div>
           </div>
         </div>
         <figcaption class="text-center">
