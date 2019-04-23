@@ -12,7 +12,16 @@
   transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
-.nav a {
+.text-link {
+  color: #757575;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.nav ul a {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
@@ -21,7 +30,7 @@
   opacity: .4;
 }
 
-.nav a:hover {
+.nav ul a:hover {
   color: #fff;
   opacity: 1;
 }
